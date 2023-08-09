@@ -1,0 +1,93 @@
+{% extends './base/SignUpBase.html' %}    
+{% block title %}
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+
+  body {
+    
+    justify-content: center;
+   
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFC700;
+    overflow: hidden;
+  }
+
+  .countdown {
+    text-align: center;
+    margin-top: 5vh;
+    
+  }
+
+  .countdown h1 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    margin: 0;
+    color: #272727;
+    
+  }
+
+  .countdown p {
+    font-size: 1.5rem;
+    margin: 0;
+    color: black;
+    font-family: 'Dosis', sans-serif;
+
+  }
+  .sayer {
+    margin-top: 50px;
+    font-family: 'Cinzel', serif;
+
+    text-align: center;
+    font-size:50px ;
+    font-weight: 800;
+  }
+  .CreditisShit{
+   
+    text-align: right;
+    padding: 20px;
+    margin-top: 30vh;
+    font-family: 'Lovers Quarrel', cursive;
+    font-weight: 600;
+    font-size: 30px;
+  }
+</style>
+</head>
+<body>
+<div class="countdown">
+  <h1 id="timer">365 : 00 : 00 : 00</h1>
+  
+</div>
+<div class="sayer">
+    <p>Re-defining Social Media, Re-shaping Humanity!</p>
+</div>
+<div class="CreditisShit">
+    <p>From Kousic</p>
+</div>
+<script>
+  const targetDate = new Date("2024-08-31T00:00:00"); // Set your desired target date and time here
+
+  const timerElement = document.getElementById("timer");
+
+  function updateCountdown() {
+    const now = new Date();
+    const timeRemaining = new Date(targetDate) - now;
+
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+    timerElement.textContent = `${days} : ${hours < 10 ? "0" : ""}${hours} : ${minutes < 10 ? "0" : ""}${minutes} : ${seconds < 10 ? "0" : ""}${seconds}`;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+{% endblock %}
