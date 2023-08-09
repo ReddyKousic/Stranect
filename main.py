@@ -108,7 +108,7 @@ def LogIn():
             return render_template(
                 "LogIn.html",
                 moon=moon,
-                error="Incorrect Password or Username",
+                error="Incorrect Password or Username", 
                 username=username1,
             )
 
