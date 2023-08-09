@@ -9,13 +9,14 @@
   body {
     
     justify-content: center;
-   
+   overflow: hidden;
     align-items: center;
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #FFC700;
-    overflow: hidden;
+   height: 100vh;
+    padding: 2px;
   }
 
   .countdown {
@@ -43,38 +44,51 @@
     font-family: 'Dosis', sans-serif;
 
   }
-  .sayer {
-    margin-top: 50px;
+  .sayer p{
+    margin-top: 30px;
+    margin-bottom: 50px;
+
     font-family: 'Cinzel', serif;
 
     text-align: center;
-    font-size:50px ;
+    font-size:40px ;
     font-weight: 800;
   }
-  .CreditisShit{
+  .CreditisShit p{
    
-    text-align: right;
+    text-align: center;
     padding: 20px;
-    margin-top: 30vh;
+    color: #484848;
+ 
     font-family: 'Lovers Quarrel', cursive;
     font-weight: 600;
     font-size: 30px;
+  }
+  p {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+
+  }
+  a {
+    color: #272727;
   }
 </style>
 </head>
 <body>
 <div class="countdown">
-  <h1 id="timer">365 : 00 : 00 : 00</h1>
+  <!-- <h1 id="timer">365 : 00 : 00 : 00</h1> -->
   <p>Thank you for Creating an account. We are making somthing Awesome for you..It takes time!</p>
   
 </div>
 <div class="sayer">
     <p>Re-defining Social Media, Re-shaping Humanity!</p>
 </div>
+<p>Kindly report Errors, Vulnerabilities, Problems here : <a href="https://forms.gle/MZTqKtQWw7mpip1X6">https://forms.gle/MZTqKtQWw7mpip1X6</a>.</p>
 <div class="CreditisShit">
-    <p>From Kousic</p>
+    <p>From Kousic.</p>
 </div>
-<script>
+<!-- <script>
   const targetDate = new Date("2024-08-31T00:00:00"); // Set your desired target date and time here
 
   const timerElement = document.getElementById("timer");
@@ -93,5 +107,5 @@
 
   updateCountdown();
   setInterval(updateCountdown, 1000);
-</script>
+</script> -->
 {% endblock %}

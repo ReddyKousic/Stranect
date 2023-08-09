@@ -256,5 +256,82 @@ body {
     opacity: 0;
   }
 }
+@media screen and (max-width: 990px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    width: 100vw;
+  }
+  .main-container .hh {
+    display: none;
+    overflow: hidden;
+  }
+  .main-container .btns {
+    background-color: #272727;
+    overflow: hidden;
+  }
+  .main-container .btns .inner-btns {
+    margin: auto;
+    width: 100vw;
+    height: 85vh;
+    background-color: rgba(0, 128, 0, 0);
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  .main-container .btns .inner-btns a {
+    text-decoration: none;
+    justify-self: center;
+  }
+  .main-container .btns .inner-btns p {
+    margin: 0;
+    font-size: 20px;
+    font-family: "Cinzel", serif;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7294117647);
+  }
+  .main-container .btns .inner-btns .p1 {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .main-container .btns .inner-btns .p2 {
+    text-align: center;
+  }
+  .main-container .btns .inner-btns .p3 {
+    text-align: right;
+    padding-right: 20px;
+  }
+  .main-container .btns .inner-btns button {
+    height: 75px;
+    width: 95vw;
+    background-color: #FFC700;
+    border-radius: 50px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    font-size: 30px;
+    border: none;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    color: #272727;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.78);
+    transition: all ease 0.3s;
+    cursor: pointer;
+  }
+  .main-container .btns .inner-btns button:hover {
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.78);
+    height: 75px;
+    font-size: 31px;
+  }
+  .main-container .btns .inner-btns button span {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=fhub.css.map */

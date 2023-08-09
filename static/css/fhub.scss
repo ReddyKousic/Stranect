@@ -64,6 +64,7 @@ body {
 
     .hh {
 
+
         background-color: $amber;
         height: 100vh;
         width: 60vw;
@@ -354,6 +355,111 @@ body {
         50%,
         100% {
             opacity: 0;
+        }
+    }
+
+    @media screen and (max-width: 990px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+        width: 100vw;
+
+        .hh {
+            display: none;
+            overflow: hidden;
+        }
+
+
+        .btns {
+            background-color: $hubbg;
+            overflow: hidden;
+
+
+
+            .inner-btns {
+                margin: auto;
+
+                width: 100vw;
+                height: 85vh;
+                background-color: rgba(0, 128, 0, 0);
+                margin-top: 5vh;
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                overflow: hidden;
+
+                a {
+                    text-decoration: none;
+                   
+                    justify-self: center;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 20px;
+                    font-family: 'Cinzel', serif;
+                    font-weight: 600;
+                    color: #ffffffba;
+                }
+
+                .p1 {
+                    text-align: left;
+                    padding-left: 20px;
+
+                }
+
+                .p2 {
+                    text-align: center;
+
+                }
+
+                .p3 {
+                    text-align: right;
+                    padding-right: 20px;
+
+                }
+
+                button {
+                    height: 75px;
+                    width: 95vw;
+                    background-color: $amber;
+                    border-radius: 50px;
+                 
+                    text-align: center;
+                    justify-self: center;
+                    align-self: center;
+               
+                    align-items: center;
+                    font-size: 30px;
+                    border: none;
+                    font-family: 'Crimson Text', serif;
+                    font-weight: 600;
+                    color: $hubbg;
+                   
+                    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.78);
+                    transition: all ease 0.3s;
+                    cursor: pointer;
+
+                    &:hover {
+                        box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.78);
+                        height: 75px;
+                        font-size: 31px;
+
+
+
+                    }
+
+                    span {
+                        display: none;
+                    }
+
+
+                }
+
+
+            }
         }
     }
 
